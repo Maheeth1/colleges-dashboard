@@ -78,11 +78,11 @@ const CollegesPage = () => {
   const handleToggleFavorite = async (collegeId: string, isCurrentlyFavorite: boolean) => {
     try {
       if (isCurrentlyFavorite) {
-        await axios.delete(`${API_BASE_URL}/favorites/${collegeId}`);
+        await axios.delete(`${API_BASE_URL}/api/favorites/${collegeId}`);
         setFavorites(prev => prev.filter(id => id !== collegeId));
         toast.success('Removed from favorites!');
       } else {
-        await axios.post(`${API_BASE_URL}/favorites`, { collegeId });
+        await axios.post(`${API_BASE_URL}/api/favorites`, { collegeId });
         setFavorites(prev => [...prev, collegeId]);
         toast.success('Added to favorites!');
       }

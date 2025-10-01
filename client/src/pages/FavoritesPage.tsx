@@ -13,7 +13,7 @@ const FavoritesPage = () => {
   const fetchFavorites = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get<College[]>(`${API_BASE_URL}/favorites`);
+      const { data } = await axios.get<College[]>(`${API_BASE_URL}/api/favorites`);
       setFavoriteColleges(data);
     } catch (error) {
       toast.error("Failed to fetch favorites.");
@@ -28,7 +28,7 @@ const FavoritesPage = () => {
 
   const handleRemoveFavorite = async (collegeId: string) => {
     try {
-      await axios.delete(`${API_BASE_URL}/favorites/${collegeId}`);
+      await axios.delete(`${API_BASE_URL}/api/favorites/${collegeId}`);
       setFavoriteColleges(prev => prev.filter(college => college._id !== collegeId));
       toast.success('Removed from favorites!');
     } catch (error) {

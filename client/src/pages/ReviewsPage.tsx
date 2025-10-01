@@ -12,7 +12,7 @@ const ReviewsPage = () => {
 
   const fetchReviews = async () => {
     try {
-      const { data } = await axios.get(`${API_BASE_URL}/reviews`);
+      const { data } = await axios.get(`${API_BASE_URL}/api/reviews`);
       setReviews(data);
     } catch (error) {
       toast.error("Failed to load reviews.");
@@ -29,7 +29,7 @@ const ReviewsPage = () => {
       return toast.error("Please fill all fields.");
     }
     try {
-      await axios.post(`${API_BASE_URL}/reviews`, formData);
+      await axios.post(`${API_BASE_URL}/api/reviews`, formData);
       toast.success("Review submitted!");
       setFormData({ collegeName: '', rating: 3, comment: '' });
       fetchReviews(); // Re-fetch reviews to show the new one
