@@ -4,7 +4,7 @@ A full-stack web application designed to help students discover, filter, and rev
 
 ## 🚀 Live Demo
 
-* **Frontend (Deployed on Netlify/Vercel):** `[https://colleges-dashboard.vercel.app/]`
+* **Frontend (Deployed on Vercel):** `[https://colleges-dashboard.vercel.app/]`
 * **Backend API (Deployed on Render):** `[https://colleges-dashboard.onrender.com]`
 
 ### 🎬 Demo Video
@@ -53,7 +53,7 @@ A short video walkthrough of the application's features can be found here:
 ![Sequelize](https://img.shields.io/badge/sequelize-323330?style=for-the-badge&logo=sequelize&logoColor=blue)
 
 ### Deployment
-![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ![Render](https://img.shields.io/badge/render-%46E3B7.svg?style=for-the-badge&logo=render&logoColor=white)
 
 ---
