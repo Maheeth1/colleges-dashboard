@@ -18,9 +18,13 @@ const seedDB = async () => {
     console.log('Connecting to database for seeding...');
     await sequelize.authenticate();
     
-    // Using { force: true } will drop all tables if they already exist
-    console.log('Syncing models and dropping existing tables...');
-    await sequelize.sync({ force: true });
+    // ✨ FIX: Replace `sync({ force: true })` with a two-step drop and sync.
+    // This correctly handles the foreign key constraints.
+    console.log('Dropping all tables...');
+    await sequelize.drop();
+    
+    console.log('Syncing all models...');
+    await sequelize.sync();
     
     console.log('Seeding College data...');
     await College.bulkCreate(seedData);
