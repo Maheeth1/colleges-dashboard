@@ -4,13 +4,13 @@ A full-stack web application designed to help students discover, filter, and rev
 
 ## 🚀 Live Demo
 
-* **Frontend (Deployed on Vercel):** `[https://colleges-dashboard.vercel.app/]`
-* **Backend API (Deployed on Render):** `[https://colleges-dashboard.onrender.com]`
+* **Frontend (Deployed on Vercel):** `[[https://colleges-dashboard.vercel.app/](https://colleges-dashboard.vercel.app/)]`
+* **Backend API (Deployed on Render):** `[[https://colleges-dashboard.onrender.com](https://colleges-dashboard.onrender.com)]`
 
 ### 🎬 Demo Video
 
 A short video walkthrough of the application's features can be found here:
-* **Watch the Demo Video:** `[https://drive.google.com/file/d/1Au-P8FpjEsJYgmMvNk62oFvIzFf0E9I7/view?usp=drive_link]`
+* **Watch the Demo Video:** `[[https://drive.google.com/file/d/1Au-P8FpjEsJYgmMvNk62oFvIzFf0E9I7/view?usp=drive_link](https://drive.google.com/file/d/1Au-P8FpjEsJYgmMvNk62oFvIzFf0E9I7/view?usp=drive_link)]`
 
 ---
 ## ✨ Features
