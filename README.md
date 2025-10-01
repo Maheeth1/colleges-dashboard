@@ -10,16 +10,7 @@ A full-stack web application designed to help students discover, filter, and rev
 ### 🎬 Demo Video
 
 A short video walkthrough of the application's features can be found here:
-* **Watch the Demo Video:** `[INSERT YOUR DEMO VIDEO LINK HERE]`
-
----
-## 📸 Screenshots
-
-
-*The main dashboard with filters applied in light mode.*
-
-
-*The application in dark mode.*
+* **Watch the Demo Video:** `[https://drive.google.com/file/d/1Au-P8FpjEsJYgmMvNk62oFvIzFf0E9I7/view?usp=drive_link]`
 
 ---
 ## ✨ Features
