@@ -28,7 +28,7 @@ const CollegesPage = () => {
     setLoading(true);
     try {
       const params = new URLSearchParams(Object.entries(filters).filter(([, value]) => value !== '').map(([key, value]) => [key, String(value)]));
-      const response = await axios.get(`${API_BASE_URL}/colleges`, { params });
+      const response = await axios.get(`${API_BASE_URL}/api/colleges`, { params });
       if (Array.isArray(response.data)) {
         setColleges(response.data);
       } else {
@@ -45,7 +45,7 @@ const CollegesPage = () => {
 
   const fetchFavorites = async () => {
     try {
-      const { data } = await axios.get<College[]>(`${API_BASE_URL}/favorites`);
+      const { data } = await axios.get<College[]>(`${API_BASE_URL}/api/favorites`);
       setFavorites(data.map((fav: College) => fav._id));
     } catch (error) {
       console.error("Could not fetch favorites"); // Changed to console.error
