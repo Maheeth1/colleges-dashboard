@@ -18,12 +18,14 @@ const seedDB = async () => {
     console.log('Connecting to database for seeding...');
     await sequelize.authenticate();
     
-    // ✨ FIX: Replace `sync({ force: true })` with a two-step drop and sync.
-    // This correctly handles the foreign key constraints.
-    console.log('Dropping all tables...');
-    await sequelize.drop();
-    
-    console.log('Syncing all models...');
+    // ✨ FIX: Manually drop tables in the correct order (dependents first)
+    // This is the most reliable way to handle foreign key constraints.
+    console.log('Dropping tables manually...');
+    await Favorite.drop();
+    await Review.drop();
+    await College.drop();
+
+    console.log('Recreating tables from models...');
     await sequelize.sync();
     
     console.log('Seeding College data...');
