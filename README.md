@@ -105,15 +105,16 @@ The frontend application will be available at http://localhost:5173 (or another 
 
 ## ↔️ API Endpoints
 The backend exposes the following REST API endpoints:
-```
-Method	Endpoint	Description
-GET	/api/colleges	Fetches all colleges with optional filters.
-GET	/api/reviews	Fetches all reviews.
-POST	/api/reviews	Adds a new review.
-GET	/api/favorites	Fetches all favorite colleges.
-POST	/api/favorites	Adds a college to favorites.
-DELETE	/api/favorites/:id	Removes a college from favorites by its ID.
-```
+
+| Method | Endpoint | Description |
+| :----- | :---------------- | :-------------------------- |
+| GET | /api/colleges | Fetches all colleges with optional filters. |
+| GET | /api/reviews | Fetches all reviews. | 
+| POST | /api/reviews | Adds a new review. |
+| GET | /api/favorites | Fetches all favorite colleges. | 
+| POST | /api/favorites | Adds a college to favorites. |
+| DELETE | /api/favorites/:id | Removes a college from favorites by its ID. |
+
 
 ## 📄 License
 This project is licensed under the MIT License.
